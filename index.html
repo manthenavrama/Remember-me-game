@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="rememberGameApp">
+<head>
+    <meta charset="utf-8">
+    <title>Remember Game</title>
+    <script src="angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/game.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body ng-controller="GameCtrl">
+<div>Pairs left to match: {{game.unmatchedPairs}}</div>
+<div>Score: {{game.matchedPairs}}</div>
+
+<table>
+    <tr ng-repeat="row in game.grid">
+        <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">
+            <div class="container">
+                <div class="card" ng-class="{flipped: tile.flipped}" >
+                    <div class="card" ng-hide="matchedPairs">
+                        <img style="cursor: pointer" class="front" ng-src="img/back.jpg">
+                        <img class="back"  ng-src="img/{{tile.title}}.jpg">
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div class="message">{{game.message}}</div>
+</body>
+</html>
