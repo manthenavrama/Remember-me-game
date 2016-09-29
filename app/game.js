@@ -2,6 +2,9 @@
  * Created by vmanthena on 27-Sep-16.
  */
 
+
+/* Memory Game Models and Business Logic */
+
 function Tile(title) {
     this.title = title;
     this.flipped = false;
@@ -61,6 +64,11 @@ Game.MESSAGE_ONE_MORE = 'Pick one more card.';
 Game.MESSAGE_MISS = 'Try again.';
 Game.MESSAGE_MATCH = 'Good job! Keep going.';
 Game.MESSAGE_WON = 'You Won The Game';
+
+
+
+
+/* Create an array with two of each tileName in it */
 
 
 function makeDeck(tileNames) {

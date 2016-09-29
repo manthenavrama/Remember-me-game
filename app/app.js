@@ -2,6 +2,8 @@
  * Created by vmanthena on 27-Sep-16.
  */
 
+/* App Controllers */
+
 var rememberGameApp = angular.module('rememberGameApp', []);
 
 rememberGameApp.factory('game', function() {
