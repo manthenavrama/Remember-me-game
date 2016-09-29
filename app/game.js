@@ -3,7 +3,7 @@
  */
 
 
-/* Memory Game Models and Business Logic */
+/* Remember Game Logic */
 
 function Tile(title) {
     this.title = title;
