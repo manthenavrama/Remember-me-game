@@ -11,6 +11,7 @@
 <body ng-controller="GameCtrl">
 <div>Pairs left to match: {{game.unmatchedPairs}}</div>
 <div>Score: {{game.matchedPairs}}</div>
+<div class="message">{{game.message}}</div><br/><br/>
 
 <table>
     <tr ng-repeat="row in game.grid">
@@ -26,6 +27,5 @@
         </td>
     </tr>
 </table>
-<div class="message">{{game.message}}</div>
 </body>
 </html>
