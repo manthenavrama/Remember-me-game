@@ -4,14 +4,14 @@ div {
 }
 
 .container {
-    width: 165px;
-    height: 200px;
+    width: 100px;
+    height: 125px;
     position: relative;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -ms-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    -ms-perspective: 300px;
+    -o-perspective: 300px;
+    perspective: 300px;
 }
 
 .card {

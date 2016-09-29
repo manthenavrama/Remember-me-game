@@ -13,7 +13,7 @@
 <div>Score: {{game.matchedPairs}}</div>
 <div class="message">{{game.message}}</div><br/><br/>
 
-<table>
+<table style="margin-left: 10%">
     <tr ng-repeat="row in game.grid">
         <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">
             <div class="container">
